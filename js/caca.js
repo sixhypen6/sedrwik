@@ -18,9 +18,9 @@ function buildNav() {
         <nav class="navbar">
             <div class="logo">sedr wiki</div>
             <ul class="nav-links">
-                ${link('/index.html', 'Home')}
-                ${link('/pages/shredderhub.html', 'ShredderHub')}
-                ${link('/pages/techmanifest.html', 'TechManifest')}
+                ${link('/sedrwik/index.html', 'Home')}
+                ${link('/sedrwik/pages/shredderhub.html', 'ShredderHub')}
+                ${link('/sedrwik/pages/techmanifest.html', 'TechManifest')}
                 <div class="search-container">
                     <input type="text" id="wiki-search" placeholder="Search for TECH..." autocomplete="off">
                     <div id="wiki-results" class="search-results-box"></div>
@@ -197,7 +197,7 @@ document.addEventListener('keydown', function (e) {
 
     if (typedKeys === secretWord) {
         if (!secretAudio) {
-            secretAudio = new Audio(basePath + 'assests/secretmusic.mp3');
+            secretAudio = new Audio(basePath + 'sedrwik/assests/secretmusic.mp3');
         }
         secretAudio.currentTime = 0;
         secretAudio.play().catch(err => console.error('Error playing secret music:', err));
