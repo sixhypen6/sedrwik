@@ -8,25 +8,22 @@ function buildNav() {
     const placeholder = document.getElementById('wiki-nav');
     if (!placeholder) return;
 
-    const p = window.location.pathname;
-    const link = (href, label) => {
-        const cls = (p === href || p.endsWith(href) || p === href + 'index.html') ? ' class="active"' : '';
-        return `<li><a href="${href}"${cls}>${label}</a></li>`;
-    };
-
     placeholder.outerHTML = `
     <nav class="navbar">
         <div class="logo">sedr wiki</div>
         <ul class="nav-links">
-            ${link('/sedrwik/index.html', 'Home')}
-            ${link('/sedrwik/pages/shredderhub.html', 'ShredderHub')}
-            ${link('/sedrwik/pages/techmanifest.html', 'TechManifest')}
-            ${link('/sedrwik/pages/voidtech.html', 'Void Tech')}
+            <li><a href="/sedrwik/index.html">Home</a></li>
+            <li><a href="/sedrwik/pages/shredderhub.html">ShredderHub</a></li>
+            <li><a href="/sedrwik/pages/techmanifest.html">TechManifest</a></li>
+            <li><a href="/sedrwik/pages/voidtech.html">Void Tech</a></li>
             <div class="search-container">
                 <input type="text" id="wiki-search" placeholder="Search for TECH..." autocomplete="off">
                 <div id="wiki-results" class="search-results-box"></div>
             </div>
         </ul>
+    </nav>\`;
+}
+
     </nav>`;
 }
 
