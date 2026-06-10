@@ -1,17 +1,18 @@
 [
   {
     "title": "Home",
-    "url": "index.html",
+    "url": "/sedrwik/index.html",
     "content": "Welcome to the Shredder & Tech wiki! Main hub."
   },
   {
     "title": "ShredderHub",
-    "url": "pages/shredderhub.html",
+    "url": "/sedrwik/pages/shredderhub.html",
     "content": "Information and guide for massless, something necessary for shredders to work."
   },
   {
     "title": "TechManifest",
-    "url": "pages/techmanifest.html",
+    "url": "/sedrwik/pages/techmanifest.html",
     "content": "This is the collection of all pages related to tech inside the wiki. Void Tech."
   }
 ]
+
