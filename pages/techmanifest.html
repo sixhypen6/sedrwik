@@ -9,7 +9,7 @@
 </head>
 
 <body
-    style="background-image: url('../assests/flungproperly.png'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+    style="background-image: url('../assets/flungproperly.png'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
     <!-- nav bar FEELS AURA -->
     <div id="wiki-nav"></div>
     <main class="wiki-container">
@@ -25,13 +25,18 @@
         </div>
         <div class="wiki-thumb thumb-inner">
             <div class="thumb-inner">
-                <img src="../assests/techbackground.gif" alt="what">
+                <img src="../assets/techbackground.gif" alt="what">
             </div>
         </div>
 
     </main>
     <footer id="wiki-footer"></footer>
-    <script src="../js/skidunited.js"></script>
+    <script src="../js/caca.js"></script>
+<script>
+    if (typeof buildNav === 'function') buildNav();
+    if (typeof buildFooter === 'function') buildFooter();
+</script>
+
 
 </body>
 
