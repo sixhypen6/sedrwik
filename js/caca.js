@@ -54,7 +54,7 @@ function initWikiSearch() {
     const rootEndIndex = path.indexOf('/Omni/');
     const basePath = rootEndIndex !== -1 ? path.substring(0, rootEndIndex + 6) : '/';
 
-    fetch(basePath + 'search-index.json')
+    fetch('/sedrwik/search-index.json')
         .then(r => {
             if (!r.ok) throw new Error('Could not load search index: ' + r.status);
             return r.json();
