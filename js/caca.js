@@ -13,20 +13,21 @@ function buildNav() {
         const cls = (p === href || p.endsWith(href)) ? ' class="active"' : '';
         return `<li><a href="${href}"${cls}>${label}</a></li>`;
     };
+placeholder.outerHTML = `
+    <nav class="navbar">
+        <div class="logo">sedr wiki</div>
+        <ul class="nav-links">
+            ${link('/sedrwik/index.html', 'Home')}
+            ${link('/sedrwik/pages/shredderhub.html', 'ShredderHub')}
+            ${link('/sedrwik/pages/techmanifest.html', 'TechManifest')}
+            ${link('/sedrwik/pages/voidtech.html', 'Void Tech')}
+            <div class="search-container">
+                <input type="text" id="wiki-search" placeholder="Search for TECH..." autocomplete="off">
+                <div id="wiki-results" class="search-results-box"></div>
+            </div>
+        </ul>
+    </nav>\`;
 
-    placeholder.outerHTML = `
-        <nav class="navbar">
-            <div class="logo">sedr wiki</div>
-            <ul class="nav-links">
-                ${link('/sedrwik/index.html', 'Home')}
-                ${link('/sedrwik/pages/shredderhub.html', 'ShredderHub')}
-                ${link('/sedrwik/pages/techmanifest.html', 'TechManifest')}
-                <div class="search-container">
-                    <input type="text" id="wiki-search" placeholder="Search for TECH..." autocomplete="off">
-                    <div id="wiki-results" class="search-results-box"></div>
-                </div>
-            </ul>
-        </nav>`;
 }
 
 // ═══════════════════════════════════════════
