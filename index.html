@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sedr wiki</title>
-    <!-- Links your custom CSS styling -->
     <link rel="stylesheet" href="/sedrwik/assets/css/style.css">
 </head>
 <body>
 
-    <!-- YOUR UI HTML GOES HERE -->
+    <!-- This placeholder container will hold your JavaScript UI Navigation -->
+    <div id="wiki-nav"></div>
+
     <div id="app">
         <h1>sedr wiki</h1>
         <h2>asdfghjkl</h2>
         <p>Your custom UI elements go inside this body block.</p>
     </div>
 
-    <!-- Links your custom JavaScript UI logic -->
+    <!-- This placeholder container will hold your JavaScript UI Footer -->
+    <div id="wiki-footer"></div>
+
+    <!-- Corrected root path to execute your JavaScript file -->
     <script src="/sedrwik/js/caca.js"></script>
+    <script>
+        // Directly trigger the layout engine building logic if needed
+        if (typeof buildNav === 'function') buildNav();
+        if (typeof buildFooter === 'function') buildFooter();
+    </script>
 </body>
 </html>
