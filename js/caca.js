@@ -16,7 +16,7 @@ function buildNav() {
 
     placeholder.outerHTML = `
         <nav class="navbar">
-            <div class="logo">Plane Crazy Shredder and Tech wiki</div>
+            <div class="logo">sedr wiki</div>
             <ul class="nav-links">
                 ${link('/index.html', 'Home')}
                 ${link('/pages/shredderhub.html', 'ShredderHub')}
@@ -40,24 +40,9 @@ function buildFooter() {
     el.innerHTML = `
         <div class="credits-container">
             <div class="credit-category">
-                <strong>Main Coder:</strong>
-                <span>platform2 (759825779974209616)</span>
-            </div>
-            <div class="credit-category">
-                <strong>Main Writer:</strong>
-                <span>peacekeepe_r (850394478895300629), platform2 (759825779974209616)</span>
-            </div>
-            <div class="credit-category">
-                <strong>Writers:</strong>
-                <span>killer_meetball., legallypvid</span>
-            </div>
-            <div class="credit-category">
-                <strong>Contributors:</strong>
-                <span>glitchedtm, kameon</span>
-            </div>
-        </div>
-        <hr>
-        <p>Made for the <a href="https://discord.gg/89gEYNR7zd" target="_blank" rel="noopener noreferrer">Neo Shredder Group Discord</a></p>`;
+                <strong>idk:</strong>
+                <span>idk</strong/>
+        <p>Made by <a href="https://youtube.com/@4j_93" target="_blank" rel="noopener noreferrer">Gup</a></p>`;
 }
 
 // ═══════════════════════════════════════════
