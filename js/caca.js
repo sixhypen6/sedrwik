@@ -10,9 +10,11 @@ function buildNav() {
 
     const p = window.location.pathname;
     const link = (href, label) => {
-        const cls = (p === href || p.endsWith(href)) ? ' class="active"' : '';
+        // Keeps your links exactly intact while handling active tab styling cleanly
+        const cls = (p === href || p.endsWith(href) || p === href + 'index.html') ? ' class="active"' : '';
         return `<li><a href="${href}"${cls}>${label}</a></li>`;
     };
+
 placeholder.outerHTML = `
     <nav class="navbar">
         <div class="logo">sedr wiki</div>
