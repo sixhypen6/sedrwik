@@ -1,8 +1,8 @@
 let searchData = [];
 
-// ═══════════════════════════════════════════
-//  NAV INJECTION
-// ═══════════════════════════════════════════
+// ==========================================
+// NAV INJECTION
+// ==========================================
 
 function buildNav() {
     const placeholder = document.getElementById('wiki-nav');
@@ -10,12 +10,11 @@ function buildNav() {
 
     const p = window.location.pathname;
     const link = (href, label) => {
-        // Keeps your links exactly intact while handling active tab styling cleanly
         const cls = (p === href || p.endsWith(href) || p === href + 'index.html') ? ' class="active"' : '';
         return `<li><a href="${href}"${cls}>${label}</a></li>`;
     };
 
-placeholder.outerHTML = `
+    placeholder.outerHTML = `
     <nav class="navbar">
         <div class="logo">sedr wiki</div>
         <ul class="nav-links">
@@ -28,16 +27,9 @@ placeholder.outerHTML = `
                 <div id="wiki-results" class="search-results-box"></div>
             </div>
         </ul>
-    </nav>\`;
-
+    </nav>`;
 }
 
-// ═══════════════════════════════════════════
-//  FOOTER INJECTION
-// ═══════════════════════════════════════════
-
-function buildFooter() {
-    const el = document.getElementById('wiki-footer');
     if (!el) return;
 
     el.innerHTML = `
