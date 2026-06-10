@@ -1386,4 +1386,28 @@ footer {
 
 .search-results-box::-webkit-scrollbar-thumb {
     border: 2px solid var(--bg-surface);
+
+/* Category Badges Styling */
+.category-section {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.category-label {
+    color: #8b949e;
+    font-weight: bold;
+    font-size: 12px;
+}
+.badge {
+    background-color: #161b22;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
 }
