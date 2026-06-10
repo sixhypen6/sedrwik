@@ -21,7 +21,7 @@ function buildNav() {
                 <div id="wiki-results" class="search-results-box"></div>
             </div>
         </ul>
-    </nav>\`;
+    </nav>`;
 }
 
     </nav>`;
